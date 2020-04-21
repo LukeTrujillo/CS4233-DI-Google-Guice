@@ -44,7 +44,7 @@ public class GameBindingModule extends AbstractModule {
 			break;
 		}
 
-		bind(BoardService.class).annotatedWith(Names.named("board")).to(board);
+		bind(BoardService.class).to(board);
 		bind(PieceService.class).annotatedWith(Names.named("pieces")).to(pieces);
 
 	}

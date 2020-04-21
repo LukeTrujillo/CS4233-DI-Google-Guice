@@ -34,7 +34,7 @@ public class Game
 	private BoardService board; 
 	
 	@Inject
-	public void setBoard(@Named("board") BoardService board) {
+	public Game(BoardService board) {
 		this.board = board;
 	}
 	
